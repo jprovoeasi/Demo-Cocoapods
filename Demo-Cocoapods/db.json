@@ -1,0 +1,140 @@
+{
+  "hotels": [
+    {
+      "id": 1,
+      "name": "Armani Hotel Dubai",
+      "country": "United Arab Emirates",
+      "city": "Dubai",
+      "price": 1250,
+      "imageURL": "http://owegoo.com/wp-content/uploads/2014/10/Armani_Hotel_Dubai_lobby.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Auberge du Soleil",
+      "country": "United States",
+      "city": "Rutherford",
+      "price": 1150,
+      "imageURL": "https://us-east.manta.joyent.com/condenast/public/cnt-services/production/2014/07/31/53da4f6fdcd5888e145ad095_auberge-du-soleil-napa-valley-napa-valley-california-102991-1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Baur au lac",
+      "country": "Switzerland",
+      "city": "Zurich",
+      "price": 1050,
+      "imageURL": "http://www.heavensportfolio.com/newsletter/images/july_newsletter/Badrutts2.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Bellagio",
+      "country": "United States",
+      "city": "Las Vegas",
+      "price": 999,
+      "imageURL": "http://www.casinocity.nl/wp-content/uploads/2014/02/bellagio.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Belmond Charleston Place",
+      "country": "United States",
+      "city": "Charleston",
+      "price": 950,
+      "imageURL": "http://58dd7e2bcc6365332dc4-364c24217bde5401027dea0de68de97f.r39.cf2.rackcdn.com/1366x570/ocha_1366x570_guest_area_lobby02a.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Belmond Copacabana Palace",
+      "country": "Brazil",
+      "city": "Rio De Janeiro",
+      "price": 890,
+      "imageURL": "https://s3.amazonaws.com/ah.sized.images/desktop/luxury-hotels-rio-de-janeiro-belmond-copacabana-palace-slide-8_lg.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Carlisle Bay",
+      "country": "Antigua And Barbuda",
+      "city": "St. Marys",
+      "price": 730,
+      "imageURL": "http://www.carlisle-bay.com/images/1210x840_45pool%20at%20carlisle%20bay.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Carlton Hotel Baglioni",
+      "country": "Italy",
+      "city": "Milan",
+      "price": 855,
+      "imageURL": "http://www.baglionihotels.com/wp-content/uploads/2013/10/rome_regina_baglioni_hotel_2-2.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Ciragan Palace Kempinski Istanbul",
+      "country": "Turkey",
+      "city": "Istanbul",
+      "price": 1275,
+      "imageURL": "http://embertravel.co.uk/wp-content/uploads/2014/06/hotelfotografie_ciragan_palace_kempinski_istanbul_IMG_8608.jpg"
+    },
+    {
+      "city": "Tienen",
+      "country": "Belgium",
+      "name": "Another hotel 3",
+      "price": 25,
+      "id": 11
+    },
+    {
+      "city": "Ergens",
+      "country": "Belgium",
+      "name": "Nieuw hotel",
+      "price": 125,
+      "id": 12
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "hotelId": 1,
+      "message": "Great hotel, don't understand the language.",
+      "score": 4
+    },
+    {
+      "id": 2,
+      "hotelId": 3,
+      "message": "Wow! Great nature, good food and very friendly people. Wow! Great nature, good food and very friendly people. Wow! Great nature, good food and very friendly people.",
+      "score": 5
+    },
+    {
+      "id": 3,
+      "hotelId": 3,
+      "message": "Simply awesome.",
+      "score": 4
+    },
+    {
+      "id": 4,
+      "hotelId": 4,
+      "message": "This city is so overrated. Fancy hotel though!",
+      "score": 2
+    },
+    {
+      "id": 5,
+      "hotelId": 7,
+      "message": "True beauty!",
+      "score": 4
+    },
+    {
+      "hotelId": 1,
+      "message": "Message",
+      "score": 1,
+      "id": 6
+    },
+    {
+      "hotelId": 1,
+      "message": "Wow ! This is a cool hotel. Free Armani suits at breakfast !",
+      "score": 5,
+      "id": 7
+    },
+    {
+      "hotelId": 1,
+      "message": "Average overall. Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.",
+      "score": 3,
+      "id": 8
+    }
+  ]
+}
