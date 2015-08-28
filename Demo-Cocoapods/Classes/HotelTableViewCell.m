@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorView;
 
 @property (strong, nonatomic) Hotel *hotel;
 
@@ -29,6 +30,7 @@
 {
     [super prepareForReuse];
     self.thumbnailImageView.image = nil;
+    [self.activityIndicatorView startAnimating];
 }
 
 #pragma mark - Public methods
@@ -44,6 +46,7 @@
 
         dispatch_async(dispatch_get_main_queue(), ^{
             if ([hotel isEqual:self.hotel]) {
+                [self.activityIndicatorView stopAnimating];
                 self.thumbnailImageView.image = image;
             }
         });

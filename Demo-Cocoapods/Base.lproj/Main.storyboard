@@ -66,17 +66,24 @@
                                                 </mask>
                                             </variation>
                                         </view>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="LO3-Ad-dY7">
+                                            <rect key="frame" x="40" y="40" width="20" height="20"/>
+                                            <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </activityIndicatorView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="LO3-Ad-dY7" firstAttribute="centerY" secondItem="tse-Yb-Mye" secondAttribute="centerY" id="2a2-6H-MES"/>
                                         <constraint firstAttribute="centerY" secondItem="ygx-tY-OBV" secondAttribute="centerY" id="DLR-Fr-Aj1"/>
                                         <constraint firstItem="tse-Yb-Mye" firstAttribute="top" secondItem="Ie6-uS-Mks" secondAttribute="top" id="G6D-Vy-67c"/>
                                         <constraint firstItem="tse-Yb-Mye" firstAttribute="leading" secondItem="Ie6-uS-Mks" secondAttribute="leading" id="HMV-7v-AZ7"/>
                                         <constraint firstAttribute="trailing" secondItem="ygx-tY-OBV" secondAttribute="trailing" constant="15" id="cCA-Dq-dB4"/>
                                         <constraint firstAttribute="bottom" secondItem="tse-Yb-Mye" secondAttribute="bottom" id="fft-c7-ssT"/>
+                                        <constraint firstItem="LO3-Ad-dY7" firstAttribute="centerX" secondItem="tse-Yb-Mye" secondAttribute="centerX" id="kHi-vB-eWe"/>
                                         <constraint firstItem="ygx-tY-OBV" firstAttribute="leading" secondItem="tse-Yb-Mye" secondAttribute="trailing" constant="15" id="tRl-c2-iQQ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="activityIndicatorView" destination="LO3-Ad-dY7" id="GkZ-id-4zx"/>
                                     <outlet property="locationLabel" destination="gCA-cS-Jb8" id="wIz-h7-b56"/>
                                     <outlet property="nameLabel" destination="aXM-d1-4CX" id="MLY-3j-IIN"/>
                                     <outlet property="priceLabel" destination="zKp-MB-sqc" id="JNG-K8-rxp"/>
@@ -98,6 +105,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="MkL-BN-BBA">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <attributedString key="attributedTitle"/>
+                        <connections>
+                            <action selector="refresh:" destination="eT9-GA-EVT" eventType="valueChanged" id="tl8-ur-Ppe"/>
+                        </connections>
+                    </refreshControl>
                     <connections>
                         <segue destination="VuD-gA-5iW" kind="show" identifier="Reviews" id="4Aa-2n-nUZ"/>
                     </connections>

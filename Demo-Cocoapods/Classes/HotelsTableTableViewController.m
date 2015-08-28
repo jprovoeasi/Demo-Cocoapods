@@ -107,6 +107,7 @@
 {
     dispatch_async(dispatch_get_main_queue(), ^{
         self.hotels = client.hotels;
+        [self.refreshControl endRefreshing];
         [self.tableView reloadData];
     });
 }
@@ -177,6 +178,14 @@
     [alertController addAction:noAction];
     [alertController addAction:yesAction];
     [self presentViewController:alertController animated:YES completion:nil];
+}
+
+#pragma mark - IBAction
+
+- (IBAction)refresh:(UIRefreshControl *)sender
+{
+    [self.webServiceClient fetchHotels];
+    [self deselect];
 }
 
 #pragma mark - Navigation
