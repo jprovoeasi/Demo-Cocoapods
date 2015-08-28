@@ -88,6 +88,7 @@
 {
     dispatch_async(dispatch_get_main_queue(), ^{
         self.reviews = client.reviews;
+        [self.refreshControl endRefreshing];
         [self.tableView reloadData];
     });
 }
@@ -113,6 +114,13 @@
     } else {
         return segue.destinationViewController;
     }
+}
+
+#pragma mark - IBAction
+
+- (IBAction)refresh:(UIRefreshControl *)sender
+{
+    [self.webServiceClient fetchReviewsForHotel:self.hotel];
 }
 
 #pragma mark - Navigation
