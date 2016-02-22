@@ -1,3 +1,3 @@
 # Demo-Cocoapods
 
-Deze demo toont het gebruik van **Cocoapods**, **AFNetworking** en **Grand Central Dispatch**.
+This demo shows the usage of **Cocoapods**, **AFNetworking** and **Grand Central Dispatch**.
